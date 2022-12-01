@@ -57,6 +57,10 @@ img {
   display: block;
 }
 
+textarea {
+  resize: none;
+}
+
 /* Розмітка */
 
 .section {
@@ -697,6 +701,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
@@ -704,6 +709,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  text-align: center;
 }
 
 .close {
@@ -723,4 +729,52 @@ img {
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.title-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text-h2);
+
+  margin-bottom: 12px;
+}
+
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  text-align: left;
+  outline: 1px solid tomato;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--color-text-contact);
+}
+
+.form-field input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
 }

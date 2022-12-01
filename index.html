@@ -395,6 +395,33 @@
             <use href="./images/symbol-defs.svg#close-1"></use>
           </svg>
         </button>
+        <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="form">
+          <div class="form-field">
+            <label for="name">Ім'я</label> <input type="text" name="name-user" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label> <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Пошта</label> <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+        </form>
+        <div>
+          <input type="checkbox" name="license" value="" id="license" />
+          <label for="license">Погоджуюся з розсилкою та приймаю Умови договору</label>
+        </div>
+        <button type="submit" class="baner-button">Відправити</button>
       </div>
     </div>
     <script src="./js/model.js"></script>
