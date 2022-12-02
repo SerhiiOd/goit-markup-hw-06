@@ -755,7 +755,7 @@ textarea {
   margin-bottom: 20px;
 
   text-align: left;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .form-field {
@@ -776,6 +776,7 @@ textarea {
 
 .form-field input,
 textarea {
+  cursor: pointer;
   margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -783,6 +784,16 @@ textarea {
 
 .form-field:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.form-field:hover > .icon-input,
+.form-field:focus-within > .icon-input {
+  fill: var(--hover-focus-link-button);
+}
+
+.form-field:hover > .form-input,
+.form-field:focus > .form-input {
+  border-color: var(--hover-focus-link-button);
 }
 
 .form-input {
@@ -795,9 +806,45 @@ textarea {
   height: 120px;
 }
 
-.form-person {
+.comment::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.icon-input {
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 12px;
+  cursor: pointer;
 }
+
+/* .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-license {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+.license {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.icon-check {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+  background-color: #188ce8;
+  border-radius: 2px;
+} */
