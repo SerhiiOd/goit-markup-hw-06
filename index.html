@@ -398,13 +398,25 @@
         <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form">
           <div class="form-field">
-            <label for="name">Ім'я</label> <input type="text" name="name-user" id="name" />
+            <label for="name" class="form-label">Ім'я</label
+            ><input type="text" name="name-user" id="name" class="form-input person" />
+            <svg class="form-person" width="18px" height="18px">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
           </div>
           <div class="form-field">
-            <label for="tel">Телефон</label> <input type="tel" name="tel" id="tel" />
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="form-input phone" />
+                        <svg class="form-person" width="18px" height="18px">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
           </div>
           <div class="form-field">
-            <label for="mail">Пошта</label> <input type="email" name="mail" id="mail" />
+            <label for="mail">Пошта</label>
+            <input type="email" name="mail" id="mail" class="form-input email" />
+                        <svg class="form-person" width="18px" height="18px">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
           </div>
           <div class="form-field">
             <label for="comment">Коментар</label>
