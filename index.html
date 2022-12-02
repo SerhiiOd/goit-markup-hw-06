@@ -430,15 +430,18 @@
             ></textarea>
           </div>
         </form>
-        <div class="check-license">
-          <input type="checkbox" name="license" value="" id="license" class="checkbox" />
-          <label for="license" class="license">
-            <svg class="icon-check" width="16px" height="15px">
-              <use href="./images/icons.svg#icon-check"></use></svg
-            >Погоджуюся з розсилкою та приймаю Умови договору</label
+          <label for="license" class="license check"
+            ><input
+              type="checkbox"
+              name="license"
+              value=""
+              id="license"
+              class="check-input"
+            />
+            <span class="check-box"></span>
+            Погоджуюся з розсилкою та приймаю <span class="text-license">Умови договору</span></label
           >
-        </div>
-        <button type="submit" class="baner-button">Відправити</button>
+        <button type="submit" class="modal-button">Відправити</button>
       </div>
     </div>
     <script src="./js/model.js"></script>
