@@ -678,7 +678,7 @@ textarea {
   background-color: var(--hover-focus-link-button);
 }
 
-.sub-text {
+/* .sub-text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -714,7 +714,7 @@ textarea {
 .sub-icon {
   display: inline-block;
   margin-left: 10px;
-}
+} */
 
 /* Backdrop */
 
