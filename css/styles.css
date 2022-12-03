@@ -678,6 +678,13 @@ textarea {
   background-color: var(--hover-focus-link-button);
 }
 
+.subscribe {
+  height: 86px;
+  width: auto;
+  margin-left: 93px;
+  display: block;
+}
+
 .sub-text {
   font-weight: 700;
   font-size: 14px;
@@ -688,7 +695,7 @@ textarea {
 }
 
 .sub-button {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   font-family: inherit;
   background-color: var(--background-color-button);
