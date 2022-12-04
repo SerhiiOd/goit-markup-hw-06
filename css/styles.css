@@ -576,6 +576,7 @@ textarea {
 
 .foot-flex {
   display: flex;
+  justify-content: space-around;
   align-items: baseline;
 }
 
@@ -784,23 +785,19 @@ textarea {
   position: absolute;
   top: 8px;
   right: 8px;
-  fill: #000000;
-  cursor: pointer;
-  border: transparent;
-  background: transparent;
-}
-
-.svg-close {
   width: 30px;
   height: 30px;
-  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
   border-radius: 50%;
-  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close .svg-close:hover {
+.close:hover {
   fill: var(--hover-focus-link-button);
 }
 
